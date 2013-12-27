@@ -767,7 +767,7 @@
           zoom = document.createElement('div');
           self.bind(zoom,"click",self.doZoom);
           self.zoom = $(zoom);
-          self.zoom.css({"cursor":"pointer",'z-index':self.zindex,'backgroundImage':'url('<%= asset_path("zoomico.png") %>')','height':18,'width':18,'backgroundPosition':'0px 0px'});
+          self.zoom.css({"cursor":"pointer",'z-index':self.zindex,'backgroundImage':"url('<%= asset_path("zoomico.png") %>')",'height':18,'width':18,'backgroundPosition':'0px 0px'});
           if (self.opt.dblclickzoom) self.bind(self.win,"dblclick",self.doZoom);
           if (cap.cantouch&&self.opt.gesturezoom) {
             self.ongesturezoom = function(e) {
